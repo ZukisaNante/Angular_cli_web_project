@@ -7,5 +7,10 @@ templateUrl: './server.component.html'
 })
 // make it usable all over the web(outside)
 export class ServerComponent {
+  serverID: number = 10;
+  serverStatus: string = 'offline';
 
+  getServerStatus() {
+    return this.serverStatus;
+  }
 }
